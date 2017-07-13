@@ -16,6 +16,7 @@
    crossorigin=""></script>
 
  <script src="https://js.arcgis.com/4.4/"></script>
+ <script type='text/javascript' src='key.js'></script>
    </head>
    <body>
     <h1>Leaflet</h1>
@@ -23,6 +24,15 @@
 
     <h1>ArcGIS API</h1>
     <div id="viewDiv"></div>
-<script src="map.js"></script>
+
+    <h1>Google Maps</h3>
+    <div id="map"></div>
+
+    <div id="test"></div>
+    <!-- need to add API key below for it to show up -->
+    <script async defer
+  src="https://maps.googleapis.com/maps/api/js?key=API_KEY&callback=initMap">
+  </script>
+<script type='text/javascript' src="map.js"></script>
 
    </body>
